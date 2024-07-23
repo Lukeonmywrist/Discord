@@ -9,15 +9,15 @@ intents.messages = True
 bot = discord.Client(intents=intents)
 
 bot_greetings = [
-    "Hello!","Hi there!",
+    "Hello!","Hi there!", 
     "Hey!","Greetings!","Good day!","Hi!",
     "Hello there!","Hey there!","Hi!",
     "Hello!","Hi there!","Hey!","Greetings!",
-    "Hello!","Hi!","Hey there!","Hello!","Hi there!",
+    "Hello!","Hi!","Hey there!","Hello!","Hi there!",                                #discord.py used
     "Hey!","Greetings!","Hello!",
     "Hi!","Hey there!","Hello!","Hi there!",
     "Hey!","Greetings!","Hello!","Hi!","Hey there!",
-    "Hello!","Hi there!","Hey!","Greetings!",
+    "Hello!","Hi there!","Hey!","Greetings!",                                                       
     "Hello!","Hi!","Hey there!"
 ]
 usr_greetings = [
@@ -49,7 +49,5 @@ async def on_message(message):
         await message.channel.send(random.choice(bot_greetings))
 
 
-bot.run(token)
-
-
-
+bot.run(token) #token from bot111
+#even the tomatoes are red , bro
